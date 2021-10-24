@@ -1,0 +1,16 @@
+package com.demo.crud.api.rest.entity;
+
+import java.sql.Date;
+import java.time.LocalDate;
+
+
+public class RegistroEmpleado {
+
+	private Long id;
+	private String nombre;
+	private String apellido;
+	private String cargo;
+	private LocalDate fechaIngreso;
+	
+	
+}

@@ -1,0 +1,5 @@
+package com.demo.crud.api.rest.repository;
+
+public interface EmpleadoRepository {
+
+}
