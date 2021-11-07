@@ -5,7 +5,6 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.demo.crud.api.rest.dto.RegistroEmpleadoDTO;
 import com.demo.crud.api.rest.entity.RegistroEmpleado;
  //entidad -> <RegistroEmpleado, Long> <- tipo de dato
 @Repository

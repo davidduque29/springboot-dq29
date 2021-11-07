@@ -26,8 +26,7 @@ public class RegistroEmpleadoController {
 	
 	@PostMapping("/empleado")
     public ResponseEntity<RegistroEmpleado> addEmpleado(@RequestBody RegistroEmpleado empleado)
-    {
-	
+    {	
         RegistroEmpleado crearEmpleado = registroEmpleadoService.agregarEmpleado(empleado);
         return new ResponseEntity<>(crearEmpleado, HttpStatus.CREATED); 
     }

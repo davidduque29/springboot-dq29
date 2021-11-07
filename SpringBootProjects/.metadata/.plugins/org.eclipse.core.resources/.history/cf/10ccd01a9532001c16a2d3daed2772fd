@@ -1,5 +1,0 @@
-package com.demo.crud.api.rest.entity;
-
-public class RegistroEmpleado {
-
-}

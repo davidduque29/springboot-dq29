@@ -31,13 +31,13 @@ public class RegistroEmpleadoService{
     {
         return empleadoRepository.findEmpleadoById(id);     
     }
-	public Optional<RegistroEmpleado> updateUsuarioId(Long usuarioId, RegistroEmpleado empleadoRequest)
+	public Optional<RegistroEmpleado> updateUsuarioId(Long usuarioId, RegistroEmpleado empleadoReq )
     {
-        return empleadoRepository.findById(usuarioId).map(empleado -> {
-        	empleado.setNombre(empleadoRequest.getNombre());
-        	empleado.setApellido(empleadoRequest.getApellido());
-        	empleado.setCargo(empleadoRequest.getCargo());
-        	empleado.setFechaIngreso(empleadoRequest.getFechaIngreso());
+		  return empleadoRepository.findById(usuarioId).map(empleado -> {
+	        	empleado.setNombre(empleadoReq.getNombre());
+	        	empleado.setApellido(empleadoReq.getApellido());
+	        	empleado.setCargo(empleadoReq.getCargo());
+	        	empleado.setFechaIngreso(empleadoReq.getFechaIngreso());
             return empleadoRepository.save(empleado);
         });
     }
